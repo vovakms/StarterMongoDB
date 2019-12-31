@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfAppMongoDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMongoDB"
+        mc:Ignorable="d"
+        Title="Стартер MongoDB" Height="427" Width="645">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFC7CCEA" Offset="0"/>
+                <GradientStop Color="#FF7684D4" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu Height="50" VerticalAlignment="Top">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9BA8C8" Offset="0"/>
+                    <GradientStop Color="#FFB6EDC1" Offset="1"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem x:Name="mp1" Header="1.)" Height="40" Width="100" Background="#FFE2EF6A" Margin="5,5,0,0"/>
+            <MenuItem x:Name="mp2" Header="2.)" Height="40" Width="100" Background="#FF99E865" Margin="5,5,0,0"/>
+            <MenuItem x:Name="mp3" Header="3.)" Height="40" Width="100" Background="#FFE2EF6A" Margin="5,5,0,0"/>
+            <MenuItem x:Name="mp4" Header="4.)" Height="40" Width="100" Background="#FF99E865" Margin="5,5,0,0"/>
+            <MenuItem x:Name="mp5" Header="5.)" Height="40" Width="100" Background="#FFE2EF6A" Margin="5,5,0,0"/>
+            <MenuItem x:Name="mp6" Header="6.)" Height="40" Width="100" Background="#FF99E865" Margin="5,5,0,0"/>
+        </Menu>
+        <StatusBar Height="50" VerticalAlignment="Bottom">
+            <StatusBar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDDDFEC" Offset="0"/>
+                    <GradientStop Color="#FF3D49AF" Offset="1"/>
+                </LinearGradientBrush>
+            </StatusBar.Background>
+            <StatusBarItem x:Name="StatusBarItem1" Content="_______________" Width="558" HorizontalAlignment="Left" Height="30" VerticalAlignment="Bottom" Margin="0,0,0,10" FontSize="18" FontWeight="Bold"/>
+        </StatusBar>
+        <RadioButton x:Name="rBut1" Content="консольное приложение" HorizontalAlignment="Left" Margin="141,285,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rBut2" Content="служба " HorizontalAlignment="Left" Margin="141,313,0,0" VerticalAlignment="Top"/>
+        <Label Content="Запустить как" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Обнаружен " HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.442,0.207" Width="88"/>
+        <Label x:Name="fileZIP" Content="__________" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Width="617"/>
+        <ComboBox x:Name="comBox1" HorizontalAlignment="Left" Margin="282,161,0,0" VerticalAlignment="Top" Width="61" Text="C:\" Height="29" FontWeight="Bold" FontSize="18">
+            <TextBlock Text="C:\"/>
+            <TextBlock Text="D:\"/>
+        </ComboBox>
+        <Label Content="Укажите на какой диск устанавливать " HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top"/>
+        <Button Content="Запустить" Margin="481,288,0,0" HorizontalAlignment="Left" Width="146" Height="46" VerticalAlignment="Top" Click="Button_Click_1" Background="#FF585ADC"/>
+        <Button Content="Установить" Margin="481,161,0,0" Click="Button_Click" Background="#FF696BF5" HorizontalAlignment="Left" Width="146" Height="29" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
